@@ -1,0 +1,297 @@
+.calculatePrice {
+    width: 100%;
+    padding: 110px 20px 90px;
+    background: #f5f5f3;
+}
+
+.calculatePrice--rtl {
+    direction: rtl;
+}
+
+.calculatePrice__container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.calculatePrice__title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+.calculatePrice__subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 28px;
+}
+
+.calculatePrice__box {
+    border: 1.5px solid #9f9f9f;
+    border-radius: 28px;
+    padding: 38px 38px 34px;
+    background: transparent;
+}
+
+.calculatePrice__section + .calculatePrice__section {
+    margin-top: 46px;
+}
+
+.calculatePrice__sectionTitle {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 18px;
+}
+
+.calculatePrice__selectRow {
+    width: 100%;
+}
+
+.calculatePrice__select {
+    width: 100%;
+    height: 98px;
+    border-radius: 24px;
+    border: 1.4px solid #9f9f9f;
+    background: #ffffff;
+    padding: 0 28px;
+    font-size: 1.15rem;
+    color: #111111;
+    outline: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.calculatePrice__packs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+    max-width: 980px;
+}
+
+.calculatePrice__pack {
+    min-height: 148px;
+    border-radius: 24px;
+    border: 1.4px solid #9f9f9f;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 28px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.calculatePrice__pack:hover {
+    transform: translateY(-3px);
+}
+
+.calculatePrice__pack--active {
+    border-color: #ff8900;
+    box-shadow: 0 10px 20px rgba(204, 141, 23, 0.16);
+    position: relative;
+}
+
+.calculatePrice__pack--active::after {
+    content: "✓";
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: #ff8900;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    box-shadow: 0 8px 18px rgba(255, 115, 0, 0.28);
+}
+
+.calculatePrice--rtl .calculatePrice__pack--active::after {
+    right: auto;
+    left: -10px;
+}
+
+.calculatePrice__packTitle {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #111111;
+}
+
+.calculatePrice__packLabel {
+    font-size: 0.98rem;
+    color: #666666;
+}
+
+.calculatePrice__bottomTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.calculatePrice__currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calculatePrice__currencyBtn {
+    min-width: 82px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid #cfcfcf;
+    background: #ffffff;
+    color: #111111;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calculatePrice__currencyBtn--active {
+    background: #3d2808;
+    color: #ffffff;
+    border-color: #3d2308;
+}
+
+.calculatePrice__priceBlock {
+    margin-top: 18px;
+}
+
+.calculatePrice__priceLabel {
+    font-size: 1rem;
+    color: #595959;
+    margin-bottom: 10px;
+}
+
+.calculatePrice__priceLine {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.calculatePrice__priceValue {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    color: #d46312;
+    line-height: 1;
+}
+
+.calculatePrice__perDay {
+    font-size: 1.3rem;
+    color: #555555;
+}
+
+.calculatePrice__whatsapp {
+    width: 100%;
+    min-height: 94px;
+    margin-top: 42px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d48612 0%, #bc5908 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: clamp(1.15rem, 2.4vw, 2rem);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 18px 24px;
+    box-shadow: 0 16px 28px rgba(212, 92, 18, 0.22);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+}
+
+.calculatePrice__whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 34px rgba(212, 92, 18, 0.28);
+    opacity: 0.98;
+}
+
+.calculatePrice__insuranceTitle {
+    margin-top: 58px;
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 800;
+    color: #111111;
+}
+
+@media (max-width: 1023px) {
+    .calculatePrice {
+        padding: 90px 16px 70px;
+    }
+
+    .calculatePrice__box {
+        padding: 28px 20px 24px;
+        border-radius: 24px;
+    }
+
+    .calculatePrice__packs {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .calculatePrice__select {
+        height: 82px;
+        padding: 0 18px;
+        font-size: 1rem;
+    }
+
+    .calculatePrice__whatsapp {
+        min-height: 74px;
+    }
+}
+
+@media (max-width: 640px) {
+    .calculatePrice__title {
+        line-height: 1.1;
+    }
+
+    .calculatePrice__box {
+        padding: 22px 14px 20px;
+    }
+
+    .calculatePrice__section + .calculatePrice__section {
+        margin-top: 34px;
+    }
+
+    .calculatePrice__sectionTitle {
+        font-size: 1.05rem;
+    }
+
+    .calculatePrice__select {
+        height: 72px;
+        border-radius: 18px;
+    }
+
+    .calculatePrice__pack {
+        min-height: 130px;
+        border-radius: 20px;
+    }
+
+    .calculatePrice__packTitle {
+        font-size: 1.02rem;
+    }
+
+    .calculatePrice__packLabel {
+        font-size: 0.92rem;
+    }
+
+    .calculatePrice__whatsapp {
+        margin-top: 30px;
+        border-radius: 26px;
+        font-size: 1.05rem;
+    }
+
+    .calculatePrice__insuranceTitle {
+        margin-top: 42px;
+    }
+}

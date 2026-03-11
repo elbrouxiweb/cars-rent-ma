@@ -1,0 +1,118 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 14px 0;
+    margin-top: 26px;
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    animation: scroll 22s linear infinite;
+}
+
+.brand-box {
+    min-width: 110px;
+    height: 56px;
+    /*margin: 0 16px;*/
+    /*background: rgba(255, 255, 255, 0.9);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    /*box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);*/
+}
+
+.track img {
+    max-width: 70px;
+    max-height: 40px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.85;
+    transition: 0.25s ease;
+}
+
+.brand-box:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-box {
+        min-width: 92px;
+        height: 50px;
+        margin: 0 10px;
+    }
+
+    .track img {
+        max-width: 58px;
+        max-height: 30px;
+    }
+}
+
+
+
+/*.marquee {*/
+/*    width: 100%;*/
+/*    overflow: hidden;*/
+/*    background: #ffffff;*/
+/*    padding: 12px 0;*/
+/*    margin-top: 26px;*/
+/*}*/
+
+/*.track {*/
+/*    display: flex;*/
+/*    width: max-content;*/
+/*    animation: scroll 22s linear infinite;*/
+/*}*/
+
+/*.brand-box {*/
+/*    min-width: 110px;*/
+/*    height: 56px;*/
+/*    margin: 0 16px;*/
+/*    background: #ffffff;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*.track img {*/
+/*    max-width: 70px;*/
+/*    max-height: 36px;*/
+/*    object-fit: contain;*/
+/*}*/
+
+/*@keyframes scroll {*/
+/*    from {*/
+/*        transform: translateX(0);*/
+/*    }*/
+
+/*    to {*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 767px) {*/
+/*    .brand-box {*/
+/*        min-width: 92px;*/
+/*        height: 50px;*/
+/*        margin: 0 10px;*/
+/*    }*/
+
+/*    .track img {*/
+/*        max-width: 58px;*/
+/*        max-height: 30px;*/
+/*    }*/
+/*}*/

@@ -1,0 +1,257 @@
+.cars {
+    width: 100%;
+    padding: 110px 20px;
+    background: #f5f5f3;
+}
+
+.cars--rtl {
+    direction: rtl;
+}
+
+.cars__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cars__subtitle {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.cars__title {
+    color: #111111;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.cars__description {
+    max-width: 820px;
+    margin: 0 auto 52px;
+    color: #555555;
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.cars__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 42px;
+    align-items: stretch;
+}
+
+.carCard {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 22px 22px 20px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.11);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-align: left;
+}
+
+.cars--rtl .carCard {
+    text-align: right;
+}
+
+.carCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+}
+
+.carCard__imageWrapper {
+    width: 100%;
+    min-height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.carCard__image {
+    width: 100%;
+    max-width: 255px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.carCard__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.carCard__titleBox {
+    min-width: 0;
+}
+
+.carCard__name {
+    color: #111111;
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.carCard__category {
+    color: #7f7f7f;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.carCard__price {
+    color: #111111;
+    font-size: 1.15rem;
+    font-weight: 800;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+.carCard__specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-bottom: 22px;
+    text-align: center;
+
+}
+
+.carCard__spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.cars--rtl .carCard__spec {
+    align-items: flex-start;
+}
+
+.carCard__icon {
+    color: #767676;
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+.carCard__label {
+    color: #7b7b7b;
+    font-size: 0.82rem;
+    line-height: 1.2;
+}
+
+.carCard__value {
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.carCard__button {
+    width: 100%;
+    height: 50px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d45612 0%, #bc6808 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(212, 121, 18, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.carCard__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 24px rgba(212, 99, 18, 0.24);
+    opacity: 0.98;
+}
+
+@media (max-width: 1100px) {
+    .cars__grid {
+        gap: 28px;
+    }
+
+    .carCard {
+        padding: 20px 18px 18px;
+    }
+
+    .carCard__specs {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cars {
+        padding: 90px 16px;
+    }
+
+    .cars__grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .cars__description {
+        font-size: 1rem;
+        margin-bottom: 36px;
+    }
+
+    .carCard {
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .carCard {
+        border-radius: 22px;
+        padding: 18px 16px 16px;
+    }
+
+    .carCard__imageWrapper {
+        min-height: 150px;
+    }
+
+    .carCard__image {
+        max-width: 220px;
+    }
+
+    .carCard__name {
+        font-size: 1rem;
+    }
+
+    .carCard__category {
+        font-size: 0.95rem;
+    }
+
+    .carCard__price {
+        font-size: 1.05rem;
+    }
+
+    .carCard__specs {
+        gap: 6px;
+    }
+
+    .carCard__label {
+        font-size: 0.76rem;
+    }
+
+    .carCard__value {
+        font-size: 0.93rem;
+    }
+
+    .carCard__button {
+        height: 48px;
+        font-size: 0.95rem;
+    }
+}

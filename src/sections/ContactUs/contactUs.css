@@ -1,0 +1,247 @@
+.contactUs {
+    width: 100%;
+    padding: 110px 20px;
+    background: #f5f5f3;
+}
+
+.contactUs--rtl {
+    direction: rtl;
+}
+
+.contactUs__container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.contactUs__heading {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 52px;
+}
+
+.contactUs__subtitle {
+    color: #6f6f6f;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contactUs__title {
+    color: #111111;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.contactUs__description {
+    color: #585858;
+    font-size: 1.08rem;
+    line-height: 1.6;
+}
+
+.contactUs__content {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 34px;
+    align-items: stretch;
+}
+
+.contactUs__info,
+.contactUs__mapBox {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 30px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.contactUs__info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contactUs__card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px;
+    border-radius: 20px;
+    background: #fafafa;
+    border: 1px solid #ececec;
+}
+
+.contactUs__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: rgba(212, 115, 18, 0.12);
+    color: #c97412;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.05rem;
+}
+
+.contactUs__card h3 {
+    color: #111111;
+    font-size: 1.02rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.contactUs__card a,
+.contactUs__card p {
+    color: #5d5d5d;
+    text-decoration: none;
+    font-size: 0.98rem;
+    line-height: 1.55;
+}
+
+.contactUs__whatsapp {
+    margin-top: 8px;
+    min-height: 56px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d45c12 0%, #bc6808 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 22px;
+    box-shadow: 0 14px 28px rgba(212, 121, 18, 0.18);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+}
+
+.contactUs__whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 34px rgba(212, 105, 18, 0.24);
+    opacity: 0.98;
+}
+
+.contactUs__mapBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactUs__mapHeader {
+    margin-bottom: 18px;
+}
+
+.contactUs__mapTitle {
+    color: #111111;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contactUs__mapText {
+    color: #5d5d5d;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.contactUs__mapWrapper {
+    width: 100%;
+    min-height: 380px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #ececec;
+    background: #f8f8f8;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.contactUs__mapWrapper iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+    display: block;
+}
+
+.contactUs__mapButton {
+    margin-top: 20px;
+    min-height: 54px;
+    border-radius: 999px;
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    transition: transform 0.22s ease, opacity 0.22s ease, background 0.22s ease;
+}
+
+.contactUs__mapButton:hover {
+    transform: translateY(-2px);
+    opacity: 0.96;
+    background: #000000;
+}
+
+@media (max-width: 1023px) {
+    .contactUs {
+        padding: 90px 16px;
+    }
+
+    .contactUs__content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .contactUs__heading {
+        margin-bottom: 38px;
+    }
+
+    .contactUs__info,
+    .contactUs__mapBox {
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .contactUs__mapWrapper,
+    .contactUs__mapWrapper iframe {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contactUs__title {
+        line-height: 1.15;
+    }
+
+    .contactUs__description {
+        font-size: 1rem;
+    }
+
+    .contactUs__card {
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .contactUs__icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+    }
+
+    .contactUs__info,
+    .contactUs__mapBox {
+        padding: 18px;
+    }
+
+    .contactUs__mapWrapper,
+    .contactUs__mapWrapper iframe {
+        min-height: 260px;
+        border-radius: 18px;
+    }
+
+    .contactUs__mapButton {
+        min-height: 50px;
+    }
+}
