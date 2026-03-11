@@ -1,3 +1,13 @@
+import peugeot from "../assets/images/cars/peugeot_208.png"
+import renaultClio5 from "../assets/images/cars/renault_clio_5.png"
+import daciaSandero from "../assets/images/cars/dacia_sandero.png"
+import volkswagenTRoc from "../assets/images/cars/volkswagen_t_roc.png"
+import hyundaiSantaFe from "../assets/images/cars/hyundai_santa_fe.png"
+import cupraFormentor from "../assets/images/cars/cuppra_formentor.png"
+
+
+
+
 export const cars = [
     {
         id: 1,
@@ -7,7 +17,7 @@ export const cars = [
         bags: 2,
         transmission: "Auto",
         fuel: "Diesel",
-        image: "/src/assets/images/cars/peugeot_208.png",
+        image: peugeot,
         priceMAD: 319,
         priceEUR: 30,
         pricing: {
@@ -24,7 +34,7 @@ export const cars = [
         bags: 2,
         transmission: "Auto",
         fuel: "Diesel",
-        image: "/src/assets/images/cars/renault_clio_5.png",
+        image: renaultClio5,
         priceMAD: 329,
         priceEUR: 31,
         pricing: {
@@ -41,7 +51,7 @@ export const cars = [
         bags: 2,
         transmission: "Manual",
         fuel: "Diesel",
-        image: "/src/assets/images/cars/dacia_sandero.png",
+        image: daciaSandero,
         priceMAD: 279,
         priceEUR: 26,
         pricing: {
@@ -58,7 +68,7 @@ export const cars = [
         bags: 3,
         transmission: "Auto",
         fuel: "Diesel",
-        image: "/src/assets/images/cars/volkswagen_t_roc.png",
+        image: volkswagenTRoc,
         priceMAD: 589,
         priceEUR: 55,
         pricing: {
@@ -75,7 +85,7 @@ export const cars = [
         bags: 4,
         transmission: "Auto",
         fuel: "Diesel",
-        image: "/src/assets/images/cars/hyundai_santa_fe.png",
+        image: hyundaiSantaFe,
         priceMAD: 749,
         priceEUR: 70,
         pricing: {
@@ -92,7 +102,7 @@ export const cars = [
         bags: 3,
         transmission: "Auto",
         fuel: "Petrol",
-        image: "/src/assets/images/cars/cuppra_formentor.png",
+        image: cupraFormentor,
         priceMAD: 799,
         priceEUR: 75,
         pricing: {
