@@ -1,27 +1,35 @@
+import dacia from "../assets/images/brands/dacia.jpg"
+import hyundai from "../assets/images/brands/hyundai.jpg"
+import peugeot from "../assets/images/brands/peugeot.jpg"
+import renault from "../assets/images/brands/renault.jpg"
+import volkswagen from "../assets/images/brands/volkswagen.jpg"
+
+
+
 export const brands = [
     {
         id: 1,
         name: "Dacia",
-        image: "/src/assets/images/brands/dacia.jpg"
+        image: dacia
     },
     {
         id: 2,
         name: "Hyundai",
-        image: "/src/assets/images/brands/hyundai.jpg"
+        image: hyundai
     },
     {
         id: 3,
         name: "Peugeot",
-        image: "/src/assets/images/brands/peugeot.jpg"
+        image: peugeot
     },
     {
         id: 4,
         name: "Renault",
-        image: "/src/assets/images/brands/renault.jpg"
+        image: renault
     },
     {
         id: 5,
         name: "Volkswagen",
-        image: "/src/assets/images/brands/volkswagen.jpg"
+        image: volkswagen
     }
 ];
